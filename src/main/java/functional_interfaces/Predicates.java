@@ -10,7 +10,7 @@ public class Predicates {
 
         /*Предикаты это методы которые принимают один аргумент и возвращают boolean*/
         Predicate<Integer> evenPredicate = p -> p % 2 == 0; //этот предикат возвращать true если число четное
-        Predicate<Integer> fivePredicate = p -> p == 6; //этот предикат возвращать true если число равно 5
+        Predicate<Integer> fivePredicate = p -> p == 6; //этот предикат возвращать true если число равно 6
 
         list.stream()
                 .filter(evenPredicate.negate().or(fivePredicate))
